@@ -1,0 +1,89 @@
+footer#footer {
+  border: 1px solid red;
+  margin-top: 150px;
+  min-height: 400px;
+  background-color: #f5eee4;
+}
+
+.footer-logo {
+  width: 100%;
+  margin-top: -100px;
+}
+
+.footer-logo img {
+  margin: 0 auto;
+  display: block;
+  width: 200px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.content-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  //align-items: center;
+  border: 1px solid red;
+}
+
+.abouts-footer {
+  margin-bottom: 65px;
+}
+
+.title-abouts-footer {
+  font-size: 25px;
+  color: #7a7270;
+}
+
+.links-footer ul li {
+  margin: 5px 0;
+}
+
+.title-links-footer {
+  color: #7a7270;
+  font-size: 25px;
+}
+
+.content-footer {
+  margin-top: 20px;
+}
+
+.links-footer ul li a {
+  color: #7a7270;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.links-footer ul li a:hover {
+  color: #000;
+}
+
+.content-title {
+  font-size: 25px;
+  color: #7a7270;
+}
+
+.content {
+  margin-bottom: 40px;
+}
+
+.title-information-contact-me {
+  font-size: 25px;
+  color: #7a7270;
+}
+
+.box-e-namad {
+  display: flex;align-items: center;
+}
+
+.box-e-namad > img {
+  width: 250px;
+  border-radius: 5px;
+}
+
+
+
