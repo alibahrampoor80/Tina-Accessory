@@ -258,9 +258,11 @@
   margin: 20px 0;
   //border-bottom: 1px solid #ccc;
 }
-.tab_container_area{
+
+.tab_container_area {
   border-top: 1px solid #ccc;
 }
+
 .tab_navigation li {
   //display: inline-block;
   cursor: pointer;
@@ -271,7 +273,7 @@
 .tab_navigation li.active,
 .tab_navigation li:hover {
   //background-color: red;
-border-bottom: 3.5px solid #bd9e70;
+  border-bottom: 3.5px solid #bd9e70;
 }
 
 .tab_container {
@@ -292,10 +294,384 @@ ul.tab_navigation li {
   margin: 0 10px;
 }
 
-
-
-
 //end  page product
+
+//start index page
+
+.list-products {
+  margin-top: 20px;
+}
+
+.list-products ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.list-products ul li {
+  margin: 0 10px;
+
+}
+
+.list-products ul li a {
+  color: #fff;
+  text-decoration: none;
+  background-color: #bd9e70;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.list-products ul li a:hover {
+  background-color: #c3934c;
+}
+
+.section-top-start {
+  //border: 1px solid red;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.titles-section-top-start {
+  //border: 1px solid red;
+}
+
+.titles-section-top-start > p.title-section-top-start {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 900 !important;
+}
+
+.titles-section-top-start > p.title-section-top-start::after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 180px;
+  margin: 0 auto;
+  background: black;
+}
+
+.titles-section-top-start {
+  text-align: center;
+
+}
+
+.titles-section-top-start > p.title-2-titles-section-top-start {
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #bd9e70;
+  display: inline-block;
+}
+
+.photo-section-top-start {
+  position: relative;
+  //border: 1px solid blue;
+}
+
+.photo-section-top-start img {
+  width: 400px;
+  //position: absolute;
+  display: block;
+  margin: 0 auto;
+
+}
+
+.photo-section-top-start:before {
+  content: "";
+  display: block;
+  width: 230px;
+  height: 340px;
+  position: absolute;
+  background: #f5eee5;
+  top: -40px;
+  left: -10px;
+  z-index: -222;
+}
+
+.photo-section-top-start:after {
+  content: 'Tina Accessory';
+  position: absolute;
+  bottom: 105px;
+  left: -38px;
+  font-weight: 600;
+  font-size: 25px;
+  transform: rotate(269deg);
+
+}
+
+.amazing-offers {
+  //border: 1px solid red;
+  margin-top: 50px;
+  min-height: 550px;
+  background-color: #bd9e70;
+}
+
+.amazing-offers .container > h2.title-amazing-offers {
+  text-align: center;
+  color: #fff;
+  font-size: 35px;
+  padding: 20px 0;
+}
+
+
+.container-carousel {
+  width: 75%;
+  margin: 0 auto;
+  display: block;
+}
+
+.owl-stage-outer {
+  padding: 42px 0;
+}
+
+ul.owl-carousel-2 {
+  //border: 1px solid red;
+  list-style-type: none;
+  padding: 15px;
+  margin: 0;
+}
+
+.carousel-1 ul::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.carousel-1 ul li {
+  float: right;
+  //position: relative;
+
+  overflow: hidden;
+  //border-radius: 30px;
+  margin: 20px 10px !important;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.carousel-1 ul li:hover {
+  transform: translateY(-20px);
+}
+
+#my-carousel-article ul li img {
+  //position: relative;
+  z-index: -5;
+}
+
+.title-price-item-carousel {
+  position: relative;
+  bottom: 30px;
+  //z-index: 22234;
+  background-color: #fff;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  width: 70%;
+  margin: 0 auto;
+  //margin-top: -10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-price-item-carousel h2 {
+  border-bottom: 2px solid #cccccc;
+  display: inline-block;
+  //width: 153px;
+  font-size: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.title-price-item-carousel > span.price1-title-price-item-carousel {
+  color: #3bae09;
+}
+
+.title-price-item-carousel > del.price2-title-price-item-carousel {
+  color: #7a7171;
+}
+
+a.add-to-card-carousel {
+  margin: 0 auto;
+  display: block;
+  width: 70%;
+  margin-top: -25px;
+  text-align: center;
+  border-radius: 30px;
+  background-color: #3bae09;
+  border: none;
+  padding: 10px;
+}
+
+
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.active {
+  background-color: #ffffff !important;
+  color: #ffffff !important;
+  width: 32px;
+
+  border-radius: 10px;
+
+}
+
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.active span {
+  background-color: #ffffff !important;
+  color: #ffffff !important;
+  height: 5px !important;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.active span {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  height: 5px !important;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
+  //padding: 5px !important;
+  background-color: #ffffff !important;
+  //border: 1px solid red !important;
+  color: #000000 !important;
+  display: inline-block !important;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 0px !important;
+  text-align: center !important;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+
+}
+
+.owl-item.active.center {
+  transform: scale(1.1);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.owl-carousel .owl-nav button.owl-next:hover, .owl-carousel .owl-nav button.owl-prev:hover {
+  background-color: #b0b0b0 !important;
+}
+
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+}
+
+.owl-prev {
+  right: -5rem;
+}
+
+.owl-next {
+  left: -5rem;
+}
+
+.best-selling-products {
+  margin-top: 100px;
+  min-height: 500px;
+  border: 1px solid red;
+}
+
+h2.title-best-selling-products {
+  //margin: 10px;
+  margin-left: 20px;
+  display: inline;
+  float: right;
+}
+
+.best-selling-products > .container {
+  border: 1px solid red;
+}
+
+.box-title-best-selling-products > hr.line-best-selling-products {
+  //margin-top: 50px;
+  height: 35px;
+  color: #c5bb90;
+  background-color: #c5bb90 !important;
+  border: 10px solid #c5bb90;
+}
+
+.owl-carousel-1 li a {
+  text-decoration: none;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
+.owl-carousel-1 li a p {
+  color: #ffff;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  margin-top: 10px;
+  background-color: #bd9e70;
+}
+
+.owl-carousel-1 > .owl-nav button.owl-next:hover, .owl-nav button.owl-prev:hover {
+  background-color: #d5a761 !important;
+}
+.owl-carousel-1 >  .owl-nav button.owl-next,  .owl-nav button.owl-prev, .owl-carousel button.active{
+  background-color: #ffffff !important;
+  color: #ffffff !important;
+  width: 32px;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+.owl-carousel-1 > .owl-nav button.owl-next, .owl-carousel-1 > .owl-nav button.owl-prev {
+  //padding: 5px !important;
+  background-color: #bd9e70 !important;
+  //border: 1px solid red !important;
+  color: #fff !important;
+  display: inline-block !important;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 0px !important;
+  text-align: center !important;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+
+}
+
+
+//end index page
 
 
 //end main pages

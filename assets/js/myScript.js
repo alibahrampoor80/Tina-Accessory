@@ -19,6 +19,26 @@ function decreaseCount(a, b) {
 }
 
 $(function () {
+
+    $('.owl-carousel-1').owlCarousel({
+        rtl: true,
+        dots: true,
+        nav: true,
+        navText: ['<i class="fa fa-angle-right"></i>', '<i class="fa fa-angle-left"></i>'],
+        center: true,
+        loop: true
+    })
+
+
+    $(".owl-carousel").owlCarousel({
+        rtl: true,
+        dots: true,
+        nav: true,
+        navText: ['<i class="fa fa-angle-right"></i>', '<i class="fa fa-angle-left"></i>'],
+        loop:true
+    });
+
+
     $('.tab_container:first').show()
     $('.tab_navigation li:first').addClass('active')
     $('.tab_navigation li').click(function (event) {
