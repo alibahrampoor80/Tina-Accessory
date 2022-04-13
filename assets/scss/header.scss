@@ -8,19 +8,7 @@
   src: url("../fonts/iranyekan_numbers/eot/iranyekanwebbold(fanum).eot?#"), url("../fonts/iranyekan_numbers/ttf/iranyekanwebbold(fanum).ttf") format("truetype"), url("../fonts/iranyekan_numbers/svg/iranyekanwebbold(fanum).svg") format("svg"), url("../fonts/iranyekan_numbers/woff/iranyekanwebbold(fanum).woff") format("woff");
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "iranyekan_number", "iranyekan";
-}
 
-body {
-  margin: 0;
-  padding: 0;
-  direction: rtl;
-  font-family: "iranyekan";
-}
 
 header#header {
   border-bottom: 1px solid black;
