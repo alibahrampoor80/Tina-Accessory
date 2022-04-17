@@ -1,3 +1,47 @@
+$(function () {
+
+    $('.tab_container:first').show()
+    $('.tab_navigation li:first').addClass('active')
+    $('.tab_navigation li').click(function (event) {
+        index = $(this).index()
+        $('.tab_navigation li').removeClass('active')
+        $(this).addClass('active')
+        $('.tab_container').hide()
+        $('.tab_container').eq(index).show()
+    })
+
+    $('.header__toggle').click(function () {
+        $('ul#menu').slideToggle()
+
+    })
+
+    $('.search-bar').click(function () {
+        $('body').css('overflow-y', 'hidden')
+        $('.search-layer').show()
+        $('.overlay').show()
+    })
+    $('.overlay').click(function () {
+        $('body').css('overflow-y', 'auto')
+        $('.search-layer').hide()
+        $(this).hide()
+    })
+
+})
+
+$(function () {
+
+    $('.tab_container:first').show()
+    $('.tab_navigation li:first').addClass('active')
+    $('.tab_navigation li').click(function (event) {
+        index = $(this).index()
+        $('.tab_navigation li').removeClass('active')
+        $(this).addClass('active')
+        $('.tab_container').hide()
+        $('.tab_container').eq(index).show()
+    })
+
+})
+
 //counter products
 function increaseCount(a, b) {
     var input = b.previousElementSibling;
@@ -18,7 +62,35 @@ function decreaseCount(a, b) {
     }
 }
 
+
 $(function () {
+    $('.bxslider').bxSlider({
+        mode:'vertical',
+        captions:true
+    });
+
+
+
+    $(".owl-carousel-3").owlCarousel({
+        rtl: true,
+        dots: true,
+        nav: true,
+        navText: ['<i class="fa fa-angle-right"></i>', '<i class="fa fa-angle-left"></i>'],
+        loop: true,
+        responsive: {
+            0: {
+                items: 2,
+            },
+            600: {
+                items: 2,
+            },
+            1000: {
+                items: 3,
+
+            }
+        }
+
+    });
 
     $('.owl-carousel-1').owlCarousel({
         rtl: true,
@@ -29,26 +101,8 @@ $(function () {
         loop: true
     })
 
-
-    $(".owl-carousel").owlCarousel({
-        rtl: true,
-        dots: true,
-        nav: true,
-        navText: ['<i class="fa fa-angle-right"></i>', '<i class="fa fa-angle-left"></i>'],
-        loop:true
-    });
-
-
-    $('.tab_container:first').show()
-    $('.tab_navigation li:first').addClass('active')
-    $('.tab_navigation li').click(function (event) {
-        index = $(this).index()
-        $('.tab_navigation li').removeClass('active')
-        $(this).addClass('active')
-        $('.tab_container').hide()
-        $('.tab_container').eq(index).show()
-    })
 })
+
 
 // window.addEventListener('contextmenu', (event) => {
 //     event.preventDefault()

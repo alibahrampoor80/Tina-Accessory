@@ -11,19 +11,27 @@
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
     <link rel="stylesheet" href="assets/css/solid.min.css">
     <link rel="stylesheet" href="assets/css/brands.min.css">
+    <link rel="stylesheet" href="assets/css/light.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.rtl.css">
     <link rel="stylesheet" href="assets/css/animate.min.css">
+
+
     <link rel="stylesheet" href="assets/scss/styles.css">
+    <link rel="stylesheet" href="assets/scss/responsive.css">
 </head>
 <body>
 <!-- start header -->
 <header id="header" class="clearfix">
     <div class="main_menu">
+        <button class="header__toggle" id="toggle-menu">
+            <i class="fa fa-bars"></i>
+        </button>
         <div class="accountUser-cart">
             <div class="account-box">
                 <div class="login-box">
-                    <i class="fa fa-sign-in-alt"></i>
-                    <a href="#">ورود</a>
+                    <a href=""> <i class="fa fa-sign-in-alt"></i>
+                    </a>
+                    <a href="#" class="login-btn-header">ورود</a>
 
                 </div>
                 <div class="register-box">
@@ -31,7 +39,7 @@
                 </div>
             </div>
             <div class="cart-shopping">
-                <a href="#"> <i class="fas fa-shopping-cart"></i>
+                <a href="#"> <i class="fal fa-shopping-cart"></i>
                 </a>
 
             </div>
@@ -52,6 +60,19 @@
                 <li><a href="#">مقالات</a></li>
             </ul>
         </div>
+
+
+        <div class="search-layer">
+            <div class="sublayer">
+                <form method="get" action="">
+                    <input type="text" name="Search" placeholder=" جستجو کنید ...">
+                    <button><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="overlay"></div>
+
+
     </div>
     <div class="search-consulting">
         <button class="search-bar">
@@ -68,35 +89,76 @@
 
 <!-- start main -->
 <div class="list-products">
-    <ul>
-        <li><a href="#">کوسن</a></li>
+    <ul class="">
+        <li><a href="#">ست رومیزی</a>
+            <!--            <ul class="sub-menu-set-romizi">-->
+            <!--                <li><a href="#"> پتینه کلاسیک <i class="fa fa-angle-left"></i> </a></li>-->
+            <!--                <li><a href="#"> پتینه آبرنگی <i class="fa fa-angle-left"></i></a> </li>-->
+            <!--                <li><a href="">مراکشی</a></li>-->
+            <!--                <li>آذرخش</li>-->
+            <!--                <li>هاریکا</li>-->
+            <!--                <li>اثر</li>-->
+            <!--                <li>آمر</li>-->
+            <!--                <li>مکعبی</li>-->
+            <!--                <li>پتینه پوست ماری</li>-->
+            <!--                <li>زبرا</li>-->
+            <!--                <li>پاناما</li>-->
+            <!--            </ul>-->
+
+        </li>
+        <li><a href="#">رانر </a></li>
+        <li><a href="#">عسلی</a></li>
         <li><a href="#">رومیزی</a></li>
-        <li><a href="#">رانر</a></li>
+        <li><a href="#">کوسن</a></li>
     </ul>
 </div>
+<div class="bg-mobile">
+    <div class="section-top-start container">
+        <div class="row">
+            <div class="titles-section-top-start col-md-6">
 
-<div class="section-top-start container">
-    <div class="row">
-        <div class="titles-section-top-start col-md-6">
-            <p class="title-section-top-start">تولید کننده و فروشنده با سابقه 20 سال در
-                انواع اکسسوری</p>
+                <div class="slider-top-mobile">
+                    <!--             slider mobile-->
+                    <ul class="bxslider">
+                        <li>
+                            <a href="#">
+                                <img src="assets/img/slideshow-1.jpg" alt="" title="تولید کننده و فروشنده  با سابقه 20 سال در انواع اکسسوری">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
 
-            <p class="title-2-titles-section-top-start">کیفیت و قیمت را با ما تجربه کنید</p>
-        </div>
-        <div class="photo-section-top-start col-md-6">
-            <img src="assets/img/kosan2.jpeg" alt="">
+                                <img src="assets/img/slideshow-2.jpg" alt="" title="تولید کننده و فروشنده  با سابقه 20 سال در انواع اکسسوری">
+                            </a>
+                        </li>  <li>
+                            <a href="#">
 
+                                <img src="assets/img/slideshow-3.jpg" alt="" title="تولید کننده و فروشنده  با سابقه 20 سال در انواع اکسسوری">
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <p class="title-section-top-start">تولید کننده و فروشنده با سابقه 20 سال در
+                    انواع اکسسوری</p>
+
+                <p class="title-2-titles-section-top-start">کیفیت و قیمت را با ما تجربه کنید</p>
+            </div>
+            <div class="photo-section-top-start col-md-6">
+                <img src="assets/img/kosan2.jpeg" alt="">
+
+            </div>
         </div>
     </div>
 </div>
-
 <div class="amazing-offers">
     <div class="container">
         <h2 class="title-amazing-offers">پیشنهادات شگفت انگیز</h2>
 
         <section class="carousel-1">
             <div class="container-carousel">
-                <ul class=" owl-carousel owl-theme owl-carousel-2">
+                <ul class=" owl-carousel owl-theme owl-carousel-3">
 
                     <li>
                         <img src="assets/img/kosan3.jpeg" alt="">
@@ -330,10 +392,12 @@
 <div class="box-photo-tel-insta">
     <div class="box-photo-insta">
         <a href="#"> <img src="assets/img/Instagram.png" alt=""></a>
+        <a href="#"> <img src="assets/img/photo-tel-mobile.png" class="photo-insta-mobile" alt=""></a>
     </div>
 
     <div class="box-photo-tel">
         <a href="#"> <img src="assets/img/Telegram.png" alt=""></a>
+        <a href="#"> <img src="assets/img/photo-insta-mobile.png" class="photo-tel-mobile" alt=""></a>
     </div>
 
 
@@ -351,6 +415,11 @@
         <div class="abouts-links-content">
             <div class="abouts-footer">
                 <p class="title-abouts-footer">درباره ما</p>
+
+                <p>گروه تولیدی تینا، با بیش از 25 سال سابقه در تولید کالا و
+                    پخش به صورت عمده در سراسر کشورایران و کشور های
+                    همسایه و با به روز ترین مدل ها و بالاترین کیفیت دوخت
+                    و متریال،مشغول به فعالیت میباشد</p>
             </div>
             <div class="links-footer">
                 <p class="title-links-footer">لینک های مفید</p>
@@ -400,7 +469,10 @@
 <script src="assets/js/owl.carousel.min.js"></script>
 <script src="assets/js/jquery.bxslider.js"></script>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/jquery.bxslider.min.js"></script>
+
 <script src="assets/js/myScript.js"></script>
+
 
 </body>
 </html>

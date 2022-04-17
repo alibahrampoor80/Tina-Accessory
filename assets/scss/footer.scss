@@ -1,13 +1,14 @@
 footer#footer {
   //border: 1px solid red;
-  margin-top: 300px;
+  margin-top: 20px;
   min-height: 400px;
   background-color: #f5eee4;
+
 }
 
 .footer-logo {
   width: 100%;
-  margin-top: -100px;
+  margin-top:150px;
   position: relative;
   top: -100px;
 }
@@ -29,7 +30,13 @@ footer#footer {
 }
 
 .abouts-footer {
-  margin-bottom: 65px;
+  //margin-bottom: 65px;
+  //border: 1px solid red;
+  width: 430px;
+}
+
+.abouts-footer p:nth-child(2) {
+  line-height: 2;
 }
 
 .title-abouts-footer {
@@ -47,7 +54,7 @@ footer#footer {
 }
 
 .content-footer {
-  margin-top: 20px;
+  margin-top: -50px;
 }
 
 .links-footer ul li a {
