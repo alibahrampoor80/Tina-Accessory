@@ -448,6 +448,21 @@ body {
   font-size: 13px;
 }
 
+.title-description-product-mobile {
+  background-color: #bd9e70;
+  padding: 10px;
+  border-radius: 10px;
+  display: table;
+  margin: 0 auto;
+  display: none;
+}
+
+.title-description-product-mobile h2 {
+  text-align: center;
+  display: inline;
+  color: #FFFFFF;
+}
+
 .title-description-product {
   background-color: #bd9e70;
   padding: 10px;
@@ -464,6 +479,23 @@ body {
   display: flex;
   text-align: center;
   justify-content: center;
+}
+
+.price-description-product-mobile {
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  display: none;
+}
+
+.price-description-product-mobile p {
+  border-radius: 10px;
+  text-align: center;
+  color: #7a7270;
+  background-color: #f5eee4;
+  padding: 10px;
 }
 
 .price-description-product p {
@@ -1296,6 +1328,18 @@ a.create-account-login-form:hover {
   padding: 10px;
 }
 
+.form-group > input.form-control {
+  text-align: right;
+}
+
+.bg-back-image-phone {
+  display: none;
+}
+
+.photo-login-back-image-mobile {
+  display: none;
+}
+
 .form-contact-me form .form-group {
   margin: 17px 0;
 }
@@ -1602,7 +1646,6 @@ a.create-account-login-form:hover {
 
 .box-product-list {
   margin-top: 30px;
-  border: 1px solid red;
 }
 
 .grouping-product {

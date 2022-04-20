@@ -66,7 +66,8 @@ function decreaseCount(a, b) {
 $(function () {
     $('.bxslider').bxSlider({
         mode:'vertical',
-        captions:true
+        captions:true,
+
     });
 
 

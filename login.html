@@ -11,20 +11,27 @@
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
     <link rel="stylesheet" href="assets/css/solid.min.css">
     <link rel="stylesheet" href="assets/css/brands.min.css">
+    <link rel="stylesheet" href="assets/css/light.min.css">
+
     <link rel="stylesheet" href="assets/css/bootstrap.rtl.css">
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/scss/styles.css">
+    <link rel="stylesheet" href="assets/scss/responsive.css">
     <title>صفحه ورود</title>
 </head>
 <body>
 <!-- start header -->
 <header id="header" class="clearfix">
     <div class="main_menu">
+        <button class="header__toggle" id="toggle-menu">
+            <i class="fa fa-bars"></i>
+        </button>
         <div class="accountUser-cart">
             <div class="account-box">
                 <div class="login-box">
-                    <i class="fa fa-sign-in-alt"></i>
-                    <a href="#">ورود</a>
+                    <a href=""> <i class="fa fa-sign-in-alt"></i>
+                    </a>
+                    <a href="#" class="login-btn-header">ورود</a>
 
                 </div>
                 <div class="register-box">
@@ -32,7 +39,7 @@
                 </div>
             </div>
             <div class="cart-shopping">
-                <a href="#"> <i class="fas fa-shopping-cart"></i>
+                <a href="#"> <i class="fal fa-shopping-cart"></i>
                 </a>
 
             </div>
@@ -53,6 +60,19 @@
                 <li><a href="#">مقالات</a></li>
             </ul>
         </div>
+
+
+        <div class="search-layer">
+            <div class="sublayer">
+                <form method="get" action="">
+                    <input type="text" name="Search" placeholder=" جستجو کنید ...">
+                    <button><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="overlay"></div>
+
+
     </div>
     <div class="search-consulting">
         <button class="search-bar">
@@ -79,16 +99,17 @@
 
                             <div class="box-username-input">
                                 <i class="fa fa-user"></i>
-                                <input type="text" name="username" placeholder="نام کاربری" class="form-control input-username"/>
+                                <input type="text" name="username" placeholder="نام کاربری"
+                                       class="form-control input-username"/>
                             </div>
 
                             <div class="box-username-password">
                                 <i class="fa fa-key"></i>
-                                <input type="password" name="username" placeholder="رمز عبور" class="form-control input-username"/>
+                                <input type="password" name="username" placeholder="رمز عبور"
+                                       class="form-control input-username"/>
                             </div>
 
                             <div class="box-remember-me-forget-password clearfix">
-
 
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
@@ -104,7 +125,7 @@
                                 </div>
                             </div>
                             <button type="submit" class="btn btn-submit-form-login">ورود</button>
-                            <a href="#" class="create-account-login-form" >ساخت حساب کاربری جدید</a>
+                            <a href="#" class="create-account-login-form">ساخت حساب کاربری جدید</a>
 
                         </form>
                     </div>
@@ -116,6 +137,10 @@
                 <div class="photo-login-back-image">
                     <img src="assets/img/YellowGrey.png" alt="">
                 </div>
+                <div class="photo-login-back-image-mobile">
+                    <img src="assets/img/yellow-koosan-mobile.png" alt="">
+                </div>
+
             </div>
         </div>
     </div>
@@ -133,6 +158,11 @@
         <div class="abouts-links-content">
             <div class="abouts-footer">
                 <p class="title-abouts-footer">درباره ما</p>
+
+                <p>گروه تولیدی تینا، با بیش از 25 سال سابقه در تولید کالا و
+                    پخش به صورت عمده در سراسر کشورایران و کشور های
+                    همسایه و با به روز ترین مدل ها و بالاترین کیفیت دوخت
+                    و متریال،مشغول به فعالیت میباشد</p>
             </div>
             <div class="links-footer">
                 <p class="title-links-footer">لینک های مفید</p>
