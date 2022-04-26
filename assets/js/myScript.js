@@ -65,11 +65,10 @@ function decreaseCount(a, b) {
 
 $(function () {
     $('.bxslider').bxSlider({
-        mode:'vertical',
-        captions:true,
+        mode: 'vertical',
+        captions: true,
 
     });
-
 
 
     $(".owl-carousel-3").owlCarousel({
@@ -80,10 +79,13 @@ $(function () {
         loop: true,
         responsive: {
             0: {
-                items: 2,
+                items: 1,
+                dots: false,
+                nav: false
             },
             600: {
                 items: 2,
+                dots: false,
             },
             1000: {
                 items: 3,
@@ -99,11 +101,45 @@ $(function () {
         nav: true,
         navText: ['<i class="fa fa-angle-right"></i>', '<i class="fa fa-angle-left"></i>'],
         center: true,
-        loop: true
+        loop: true,
+        responsive: {
+            0: {
+                items: 1,
+                dots: false,
+                nav: false,
+                center: false,
+                loop:false
+            },
+            600: {
+                items: 2,
+                dots: false,
+                center: false,
+                loop:false
+            },
+            992: {
+                items: 2,
+                center: false,
+                // dots: false,
+            },
+            1000: {
+                items: 3,
+
+            }
+        }
     })
 
 })
+$(function () {
+    $('ul#menu-grouping li:has(ul)')
+        .children('a')
+        .append('<i class="fa fa-angle-left"></i>')
 
+    $('ul#menu-grouping li').hover(function () {
+        $(this).children('ul').show()
+    }, function () {
+        $(this).children('ul').hide()
+    })
+})
 
 // window.addEventListener('contextmenu', (event) => {
 //     event.preventDefault()
